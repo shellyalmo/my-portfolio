@@ -162,11 +162,17 @@ p {
 }
 
 /* projects section */
+.projects-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .project-link {
-  background: url("../assets/weather-app.jpg") no-repeat center center/cover;
-  object-fit: cover;
-  width: 50vw;
-  height: 50vh;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0);
+  width: 80vw;
+  height: 70vh;
 }
 
 /* #weather-app {
