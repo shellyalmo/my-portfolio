@@ -1,0 +1,99 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9); /*links color*/
+  --overlay-color: rgba(24, 39, 51, 0.85); /*hamburger menu background color*/
+  --menu-speed: 0.75s; /*hamburger menu toggle speed*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* The default font size of the browser is 16px, so if we want 1rem to be equal to 10px, we divide 10px by 16px = 62.5% */
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 70%;
+  }
+}
+body {
+  font-family: "Forum", cursive;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 60rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+#showcase {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative; /*because of before that will add overlay and will have position absolute (relative to its first relative container)*/
+}
+#showcase::before {
+  content: "";
+  background: url("../assets/shelly.jpeg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%; /*relative to parent*/
+}
+
+#showcase h1 {
+  font-size: 4rem;
+}
+
+#showcase p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 500px) {
+  .menu-wrap {
+    display: none;
+  }
+}
