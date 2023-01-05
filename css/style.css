@@ -75,7 +75,7 @@ a {
 }
 
 #showcase p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .btn {
@@ -120,8 +120,16 @@ nav {
 }
 
 /* deactivating navbar for mobile first */
-nav{
+nav {
   display: none;
+}
+
+/* about section */
+.intro h1,
+.intro p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 @media (min-width: 500px) {
