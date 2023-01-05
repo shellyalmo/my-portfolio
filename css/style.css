@@ -97,7 +97,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position:sticky;
+  position: sticky;
   top: 0;
   background-color: #fff;
 }
@@ -119,12 +119,16 @@ nav {
   margin-left: 1rem;
 }
 
-header {
-  position: relative;
+/* deactivating navbar for mobile first */
+nav{
+  display: none;
 }
 
 @media (min-width: 500px) {
   .menu-wrap {
     display: none;
+  }
+  nav {
+    display: inline-block;
   }
 }
