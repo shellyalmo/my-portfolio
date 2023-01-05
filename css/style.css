@@ -174,7 +174,9 @@ p {
   width: 80vw;
   height: 70vh;
 }
-
+#projects{
+  text-align: center;
+}
 /* #weather-app {
   background: url("../assets/weather-app.jpg") no-repeat center center/cover;
 } */
