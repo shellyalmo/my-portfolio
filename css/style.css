@@ -128,9 +128,50 @@ nav {
 .intro h1,
 .intro p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-top: 1.5rem;
 }
+
+#about {
+  margin: 0 1rem;
+}
+.about-bullets {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.about-bullets h2,
+h3,
+p {
+  font-size: 1.7rem;
+}
+
+.education,
+.experience,
+.volunteer {
+  margin-top: 3rem;
+}
+
+.education-list,
+.volunteer-list {
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: space-around;
+}
+
+/* projects section */
+.project-link {
+  background: url("../assets/weather-app.jpg") no-repeat center center/cover;
+  object-fit: cover;
+  width: 50vw;
+  height: 50vh;
+}
+
+/* #weather-app {
+  background: url("../assets/weather-app.jpg") no-repeat center center/cover;
+} */
 
 @media (min-width: 500px) {
   .menu-wrap {
