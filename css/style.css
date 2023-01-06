@@ -126,7 +126,9 @@ nav {
 }
 
 /* about section */
-#about h1, #projects h1, #about-page h1 {
+#about h1,
+#projects h1,
+#about-page h1 {
   text-align: center;
   font-size: 3rem;
   background-color: var(--overlay-color);
@@ -159,7 +161,7 @@ nav {
   font-weight: 800;
 }
 .about-bullets h3 {
- font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .about-bullets img {
@@ -199,21 +201,30 @@ nav {
 }
 
 /* about page */
-.my-img-about-page{
+.my-img-about-page {
   width: 100%;
 }
 
 /* paintings gallery */
-.paintings{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  grid-template-rows: repeat(5,1fr);
-  gap: 1rem;
+.about-page-hobbies{
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
-.painting img{
+.paintings {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 3rem;
+  margin: 0 2rem;
+}
+.painting img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 @media (min-width: 500px) {
   .menu-wrap {
