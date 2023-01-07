@@ -352,6 +352,10 @@ margin-top: 2rem;
   content: "A mockup for the official Tesla website for practicing html and css, as part of my FullStack Bootcamp at Appleseeds.";
 }
 
+footer{
+  text-align: center;
+  background-color: var(--primary-color);
+}
 @media (min-width: 500px) {
   .menu-wrap {
     display: none;
