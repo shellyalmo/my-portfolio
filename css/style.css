@@ -109,25 +109,18 @@ a {
 
 /* navbar for none mobile */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   background-color: #fff;
-}
-.logo img {
-  width: 30%;
-  margin: 1rem;
-  padding: 2rem;
+  width: 100vw;
 }
 
 .navbar-none-mobile ul {
   padding: 1rem;
   font-size: 2rem;
   display: flex;
-  width: 60%;
-  justify-content: space-between;
+  /* width: 60%;  */
+  justify-content: center;
 }
 
 .navbar-none-mobile li {
@@ -231,9 +224,9 @@ nav {
 .about-page-education h2,
 .about-page-experience h2,
 .about-page-volunteer h2 {
-color: var(--secondary-color);
-text-align: center;
-margin-top: 2rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 2rem;
 }
 /* paintings gallery */
 .about-page-hobbies {
@@ -352,7 +345,7 @@ margin-top: 2rem;
   content: "A mockup for the official Tesla website for practicing html and css, as part of my FullStack Bootcamp at Appleseeds.";
 }
 
-footer{
+footer {
   text-align: center;
   background-color: var(--primary-color);
 }
@@ -363,4 +356,31 @@ footer{
   nav {
     display: inline-block;
   }
+  .logo img {
+    width: 6vw;
+    padding: 1rem;
+  }
+  .navbar-none-mobile {
+    display: flex;
+    height: 12vh;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu-items a {
+    color: var(--overlay-color);
+    font-size: 3rem;
+    padding-left: 3rem;
+  }
+  .menu-items a:hover {
+    text-decoration: underline var(--overlay-color);
+  }
+  .btn{
+    font-size: 1.5rem;
+  }
+  .navbar-none-mobile > .contact-links a{
+    color: black;
+    padding-left: 2rem;
+    font-size:1.5rem;
+  }
+
 }
