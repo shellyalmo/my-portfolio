@@ -248,9 +248,24 @@ nav {
   height: 90%;
   position: relative;
 }
-#projects-page > div > div > div.project-background {
+.weather-react {
   background: url(../assets/projects/weatherReact.jpg) no-repeat center
     center/cover;
+}
+.hangman {
+  background: url(../assets/projects/hangman.jpg) no-repeat center center/cover;
+}
+.catGPT {
+  background: url(../assets/projects/catGPT.jpg) no-repeat center center/cover;
+}
+.temp-control {
+  background: url(../assets/projects/temp.jpg) no-repeat center center/cover;
+}
+.data-pipeline {
+  background: url(../assets/projects/jupyter.jpg) no-repeat center center/cover;
+}
+.tesla {
+  background: url(../assets/projects/tesla.jpg) no-repeat center center/cover;
 }
 .project-links {
   display: flex;
@@ -264,7 +279,7 @@ nav {
   margin: 1rem;
 }
 
-.project-desc{
+.project-desc {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -282,11 +297,30 @@ nav {
 }
 
 .project-desc:focus::after {
-  content: "A weather application built with React, using weather API.";
   font-size: 2rem;
   text-align: center;
   background-color: #fff;
   opacity: 0.8;
+  line-height: 3rem;
+}
+
+.weather-react > .project-desc:focus::after {
+  content: "A weather application built with React, using weather API.";
+}
+.hangman > .project-desc:focus::after {
+  content: "A Hangman game written with vanilla Javascript and uses Bootstrap, as part of my FullStack Bootcamp precourse assignment.";
+}
+.catGPT > .project-desc:focus::after {
+  content: "A chat system written in vanilla JS which simulates feline reactions to a conversation, inspired by chatGPT.";
+}
+.temp-control > .project-desc:focus::after {
+  content: "My first ever React App, a temperature remote control simulator.";
+}
+.data-pipeline > .project-desc:focus::after {
+  content: "A Python program that builds a database of current weather data from OpenWeatherMap web APIs.";
+}
+.tesla > .project-desc:focus::after {
+  content: "A mockup for the official Tesla website for practicing html and css, as part of my FullStack Bootcamp at Appleseeds.";
 }
 
 @media (min-width: 500px) {
