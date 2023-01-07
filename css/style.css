@@ -388,6 +388,10 @@ footer {
   .btn {
     font-size: 1.5rem;
   }
+  .btn:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+  }
   .navbar-none-mobile > .contact-links a {
     color: black;
     padding-left: 2rem;
