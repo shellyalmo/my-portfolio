@@ -395,17 +395,27 @@ footer {
   .intro-text p {
     font-size: 4rem;
   }
-  .my-img-about-page{
+  .my-img-about-page {
     margin: 4rem 0;
     width: 40vw;
-
   }
-  .about-container{
+  .about-container {
     display: flex;
   }
-  .resume *{
+  .resume * {
     font-size: 1.8rem;
     line-height: 3rem;
+  }
+  .paintings {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .about-page-hobbies h2 {
+    padding: 2rem;
+  }
+  .painting:hover{
+    transform: scale(1.3);
+    transition: all 1s;
   }
   footer {
     font-size: 2rem;
