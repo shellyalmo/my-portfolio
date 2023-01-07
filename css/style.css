@@ -113,6 +113,7 @@ nav {
   top: 0;
   background-color: #fff;
   width: 100vw;
+  z-index: 3;
 }
 
 .navbar-none-mobile ul {
@@ -374,13 +375,23 @@ footer {
   .menu-items a:hover {
     text-decoration: underline var(--overlay-color);
   }
-  .btn{
+  .btn {
     font-size: 1.5rem;
   }
-  .navbar-none-mobile > .contact-links a{
+  .navbar-none-mobile > .contact-links a {
     color: black;
     padding-left: 2rem;
-    font-size:1.5rem;
+    font-size: 1.5rem;
   }
-
+  .navbar-none-mobile > .contact-links a:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+    display: inline-block;
+  }
+  .intro-text p {
+    font-size: 4rem;
+  }
+  footer {
+    font-size: 2rem;
+  }
 }
