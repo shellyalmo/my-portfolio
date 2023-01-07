@@ -319,13 +319,14 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 
 .project-desc:focus::after {
   font-size: 2rem;
   text-align: center;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   line-height: 3rem;
 }
 
@@ -364,6 +365,11 @@ footer {
   .logo img {
     width: 6vw;
     padding: 1rem;
+    cursor: pointer;
+  }
+  .logo:hover {
+    transform: rotate(360deg);
+    transition: all 3s;
   }
   .navbar-none-mobile {
     display: flex;
@@ -413,9 +419,43 @@ footer {
   .about-page-hobbies h2 {
     padding: 2rem;
   }
-  .painting:hover{
+  .painting:hover {
     transform: scale(1.3);
     transition: all 1s;
+  }
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .project {
+    width: 30vw;
+    margin-top: 2rem;
+  }
+  .project-desc:hover::after {
+    font-size: 2rem;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.8;
+    line-height: 3rem;
+  }
+
+  .weather-react > .project-desc:hover::after {
+    content: "A weather application built with React, using weather API.";
+  }
+  .hangman > .project-desc:hover::after {
+    content: "A Hangman game written with vanilla Javascript and uses Bootstrap, as part of my FullStack Bootcamp precourse assignment.";
+  }
+  .catGPT > .project-desc:hover::after {
+    content: "A chat system written in vanilla JS which simulates feline reactions to a conversation, inspired by chatGPT.";
+  }
+  .temp-control > .project-desc:hover::after {
+    content: "My first ever React App, a temperature remote control simulator.";
+  }
+  .data-pipeline > .project-desc:hover::after {
+    content: "A Python program that builds a database of current weather data from OpenWeatherMap web APIs.";
+  }
+  .tesla > .project-desc:hover::after {
+    content: "A mockup for the official Tesla website for practicing html and css, as part of my FullStack Bootcamp at Appleseeds.";
   }
   footer {
     font-size: 2rem;
