@@ -37,6 +37,20 @@ ul {
 a {
   text-decoration: none;
 }
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 6vh;
+  background-color: var(--primary-color);
+  opacity: 1;
+  cursor: pointer;
+}
+.contact a {
+  color: black;
+  padding: 1rem;
+}
 .container {
   max-width: 60rem;
   margin: auto;
