@@ -283,14 +283,24 @@ nav {
 .catGPT {
   background: url(../assets/projects/catGPT.jpg) no-repeat center center/cover;
 }
-.temp-control {
-  background: url(../assets/projects/temp.jpg) no-repeat center center/cover;
+.minecraft {
+  background: url(../assets/projects/minecraft.jpg) no-repeat center
+    center/cover;
+}
+.dice {
+  background: url(../assets/projects/dice.jpg) no-repeat center center/cover;
 }
 .data-pipeline {
   background: url(../assets/projects/jupyter.jpg) no-repeat center center/cover;
 }
 .tesla {
   background: url(../assets/projects/tesla.jpg) no-repeat center center/cover;
+}
+.santa {
+  background: url(../assets/projects/santa.jpg) no-repeat center center/cover;
+}
+.petlify {
+  background: url(../assets/projects/petlify.jpg) no-repeat center center/cover;
 }
 .project-links {
   display: flex;
@@ -330,6 +340,15 @@ nav {
   line-height: 3rem;
 }
 
+.dice > .project-desc:focus::after {
+  content: "A Dice Roll Game written with html , css and vanilla JS for practicing DOM manipulation.";
+}
+.santa > .project-desc:focus::after {
+  content: "A fullstack App for playing and managing Secret Santa games, with customize gift ideas from chatGPT.";
+}
+.petlify > .project-desc:focus::after {
+  content: "A React App for adopting pets by breed from a local shelter ( CRUD + Firebase )";
+}
 .weather-react > .project-desc:focus::after {
   content: "A weather application built with React, using weather API.";
 }
@@ -339,8 +358,8 @@ nav {
 .catGPT > .project-desc:focus::after {
   content: "A chat system written in vanilla JS which simulates feline reactions to a conversation, inspired by chatGPT.";
 }
-.temp-control > .project-desc:focus::after {
-  content: "My first ever React App, a temperature remote control simulator.";
+.minecraft > .project-desc:focus::after {
+  content: "My implementation of the Minecraft game as a 2D pre-generated world. Written with html, css and vanilla Javascript, for practicing DOM manipulation and game design.";
 }
 .data-pipeline > .project-desc:focus::after {
   content: "A Python program that builds a database of current weather data from OpenWeatherMap web APIs.";
@@ -403,7 +422,7 @@ footer {
     display: inline-block;
   }
   .intro-text p {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .my-img-about-page {
     margin: 4rem 0;
@@ -441,19 +460,29 @@ footer {
     background-color: #fff;
     opacity: 0.8;
     line-height: 3rem;
+    cursor: pointer;
   }
 
+  .dice > .project-desc:hover::after {
+    content: "A Dice Roll Game written with html , css and vanilla JS for practicing DOM manipulation.";
+  }
+  .petlify > .project-desc:hover::after {
+    content: "A React App for adopting pets by breed from a local shelter ( CRUD + Firebase )";
+  }
+  .santa > .project-desc:hover::after {
+    content: "A fullstack App for playing and managing Secret Santa games, with customized gift ideas from chatGPT.";
+  }
   .weather-react > .project-desc:hover::after {
     content: "A weather application built with React, using weather API.";
   }
   .hangman > .project-desc:hover::after {
     content: "A Hangman game written with vanilla Javascript and uses Bootstrap, as part of my FullStack Bootcamp precourse assignment.";
   }
+  .minecraft > .project-desc:hover::after {
+    content: "My implementation of the Minecraft game as a 2D pre-generated world. Written with html, css and vanilla Javascript, for practicing DOM manipulation and game design.";
+  }
   .catGPT > .project-desc:hover::after {
     content: "A chat system written in vanilla JS which simulates feline reactions to a conversation, inspired by chatGPT.";
-  }
-  .temp-control > .project-desc:hover::after {
-    content: "My first ever React App, a temperature remote control simulator.";
   }
   .data-pipeline > .project-desc:hover::after {
     content: "A Python program that builds a database of current weather data from OpenWeatherMap web APIs.";
